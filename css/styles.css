@@ -588,11 +588,12 @@ body {
 }
 
 /* -------join------- */
-.footmain {
+.joinn {
   display: flex;
 }
 
 .join {
+  display: flex;
   padding-top: 12px;
   margin-left: 70px;
   margin-top: 48px;
