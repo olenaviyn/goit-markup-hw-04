@@ -573,13 +573,7 @@ body {
 }
 
 .footmain {
-  padding: 60px 0;
-}
-
-.foomain > .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding: 60px;
 }
 
 .web {
@@ -590,6 +584,7 @@ body {
 /* -------join------- */
 .joinn {
   display: flex;
+  gap: 70px;
 }
 
 .join {
