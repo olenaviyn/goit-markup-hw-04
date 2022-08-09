@@ -136,6 +136,8 @@ body {
 }
 
 .header-tell {
+  display: flex;
+  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -151,6 +153,8 @@ body {
 }
 
 .link-mail {
+  display: flex;
+  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -165,8 +169,9 @@ body {
   color: #2196f3;
 }
 
-.icon:hover {
-  color: #2196f3;
+.link-mail:hover .icon,
+.link-mail:focus .icon {
+  fill: #2196f3;
 }
 
 .icon {
@@ -296,6 +301,8 @@ body {
   padding: 10px 32px;
   min-width: 216px;
   height: 50px;
+  border: none;
+  outline: none;
 }
 /* about */
 
@@ -395,6 +402,10 @@ body {
 
 .team-photo {
   width: calc(100% - 60px / 3);
+  background-color: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team {
@@ -495,6 +506,15 @@ body {
   /* width: calc(100% - 60px / 3); */
 }
 
+.marketing-item {
+  display: block;
+}
+
+.marketing-item:hover {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+}
+
 .markdiv {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
@@ -544,17 +564,18 @@ body {
 }
 
 .clients-btn {
-  color: var(--logo-company-color);
+  fill: var(--logo-company-color);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  background-color: var(--accent-color);
+  fill: #2196f3;
+  border-color: var(--accent-color);
 }
 
 .clients-link:hover .clients-btn,
 .clients-link:focus .clients-btn {
-  fill: #ffffff;
+  fill: var(--accent-color);
 }
 
 /* --------footer---------- */
@@ -585,7 +606,7 @@ body {
 .joinn {
   display: flex;
   gap: 70px;
-  align-self: baseline;
+  align-items: baseline;
 }
 
 .welcome-title {
@@ -594,7 +615,9 @@ body {
   margin-bottom: 20px;
   color: var(--main-white-color);
   font-weight: 700;
-  line-height: 1.143;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
 }
@@ -613,8 +636,14 @@ body {
 .team-soc-join:focus {
   background-color: var(--accent-color);
 }
+.team-soc-icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+}
 
-.team-soc-join:hover .team-soc-icon,
-.team-soc-join:focus .team-soc-icon {
+.team-soc-join:hover .team-soc-icon1,
+.team-soc-join:focus .team-soc-icon1 {
   fill: #ffffff;
 }
